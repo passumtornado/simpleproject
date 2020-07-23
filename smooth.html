@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap files-->
+    <link rel="stylesheet" href="css/styles.css">
+    <title>my project</title>
+    <style>
+        body{
+            font-family:"Trebuchet MS", Tahoma, Arial, sans-serif;
+            font-size:100%;
+        
+        }
+        .container{
+            width: 960px;
+            margin: 0 auto;
+        }
+   
+    .banner {
+        background-color:#FFF;
+     }
+        #mainnav{
+            background-color: #60668B;
+            height: 35px;
+      } 
+        #mainnav ul{
+            list-style-type: none;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+        }
+        
+   
+        #mainnav li{
+            float: left;
+            width: 120px;
+            height: 35px;
+            background-color: #7D83A4;
+            text-align: center;
+            border-left: 1px black solid;
+            border-right: 1px black solid;
+            line-height: 35px;
+        }
+        #mainnav li a{
+            text-decoration: none;
+            color:#ffffff;
+            display:block;
+        }
+        #mainnav ul li a:hover {
+         background-color:#29336B;
+         color:#F8F068;
+        }
+    .wrapper {
+    
+         width:960px;
+         border:thin solid black;
+         margin:0 auto;
+         }
+        
+        #sidenav{
+            width: 270px;
+            float: left;
+            background-color:#CCC;
+            padding:0px 20px 0px 20px;
+            border-right: 1px dashed black;
+        }
+        #sidenav p, #sidenav h2, #sidenav h4{
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-bottom:20px;
+        }
+        #sidenav h2{
+            margin-top: 15px;
+        }
+        #main{
+            width: 600px;
+            float: right;
+            padding:0px 20px 0px 20px;
+        }
+        #main p, #main h2, #main h4 {
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-bottom:20px;
+        }
+        .img-content{
+            float: right;  
+        }
+        .img-content img{
+           
+             width:290px;
+             height:230px;
+             border: 1px solid  #7D83A4;
+             border-radius: 6px;
+            
+        }
+        
+        #footer {
+         clear:both;
+         background-color:#BA2B22;
+         width:960px;
+         padding-top:10px;
+        }
+        #footer p {
+            margin:10px 0 0 20px;
+            text-align: center;
+            font-family:Verdana, Geneva, sans-serif;
+            font-size:0.689em;
+            padding-top: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+     <div class="brand">
+      <img src="zyon.jpg" width="200" height="150" alt="zyon">
+    </div>
+    <nav>
+       <div id="mainnav">
+        <ul>
+          <li><a href="#">Home</a></li> 
+            <li><a href="#">About Us</a></li> 
+            <li><a href="#">Recipe</a></li> 
+            <li><a href="#">Submit Recipe</a></li>
+            <li><a href="#">Forum</a></li> 
+            <li><a href="#">Contact</a></li> 
+        </ul>
+        
+        </div> 
+    </nav>
+    <div class="wrapper" id="wrapper">
+        <div id="sidenav">
+           <h2>TOP RATED SMOOTHIE</h2>
+            <h4>THE FUNKY ORANGE</h4>
+            <p>This code disables the style so the browser ignores it. You can remove these comments at
+            any time to activate the style. Designers often keep either background-colors or borders
+            in the code to help them identify layout elements in the future. Save the f le and preview
+            it in your browser. The purple background for the wrap is now gone
+            </p>
+            <h4>THE TROPICAL KICKBACK</h4>
+            <p>This code disables the style so the browser ignores it. You can remove these comments at
+            any time to activate the style. Designers often keep either background-colors or borders
+            in the code to help them identify layout elements in the future. Save the f le and preview
+            it in your browser. The purple background for the wrap is now gone</p>
+        </div>
+        <div id="main">
+        <h2>Muna World is your #1 destination for smoothie recipes</h2>
+            <h4>OUR MISSION STATEMENT</h4>
+            <p>
+           As in the earlier padding example, the result is extra space between the text and the
+        columns. However, a crucial dif erence is that when you add margins to the text
+        elements, the width of the columns is not af ected. This can be advantageous, as you no
+        longer have to add width to the padding. You only need to consider the width property
+        for the column.
+        This technique has its own disadvantages, because the rules you set currently apply to
+        all paragraphs and headings 1, 2, and 3 elements on the page. For example, notice that
+        the footer was pushed 20 pixels to the right because the content is a paragraph. In cases
+        where you only want to specify the elements within the sidebar and main, the contextual
+        selector you used earlier for the navigation is useful.
+            </p>
+            <div class="img-content">
+                <img src="zyon.jpg">
+            </div>
+        </div>
+        <div id="footer">
+         <p>Copyright SmoothieWorld 2019 </p>
+         <p>Registration on or use of this site constitutes acceptance of
+        our <a href="useragreement.html"> user agreement </a> and
+        <a href="privacy.html">Privacy Policy.</a></p>
+       </div>
+     </div>
+        
+    </div>
+   
+</body>
+</html>

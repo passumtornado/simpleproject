@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Untitled Document</title>
+    
+    <script>
+	  function showans(){
+          var t1 = $('#txt1').val();
+          var t2 = $('#txt2').val();
+          var ans = parseInt(t1) + parseInt(t2);
+          
+          $('#txt3').val(ans);
+      }
+        function cleartxt(){
+            $('#txt1').val('');
+             $('#txt2').val('');
+             $('#txt3').val('');
+        }
+	
+	</script>
+  <style type="text/css">
+    body{
+      margin: 0;
+      font-family: Verdana, Georgia, serif;
+      font-size: 14px;
+    }
+    #navbar ul{
+        padding: 5px;
+        margin: 10px;
+        border-radius: 5px;
+        background-color: #000;
+        list-style-type: none;
+        text-align: center;
+    }
+    #navbar ul li{
+      display: inline;
+    }
+    #navbar ul li a{
+      text-decoration: none;
+      padding: .2em 1em;
+      color: #fff;
+      background-color: #000;
+      font-family: Arial;
+
+    }
+     #navbar ul li a:hover{
+      color: #000;
+      background-color: #fff;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div id="navbar">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Home</a></li>
+    </ul>
+  </div>
+	Enter first value:
+    <input type="text" id="txt1">
+    <br>
+     <br>Enter second value:
+    <input type="text" id="txt2">
+    <br>
+    <br>Answer:
+    <input type="text" id="txt3">
+    <br>
+    <br>
+    <input type="button" value="Answer" onclick="showans();">
+    <br>
+    <br>
+    <input type="button" value="clear" onclick="cleartxt();">
+<script src="js/jquery-3.3.1.min.js"></script>
+	
+	
+</body>
+</html>

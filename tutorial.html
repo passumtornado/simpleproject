@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jquery tutorials</title>
+	
+	
+</head>
+<body>
+<input name="rd1" id="rd1"	type="radio" value="ml">machine learning</input><br />
+<input name="rd1" id="rd2"	type="radio" value="dl">Deep learning</input><br />
+<button id="btn1">click me</button> <br ><br >
+<form>
+	<div class="input1">
+		<input type="number" class="pc">
+	</div>
+	<div class="input1">
+		<input type="number" class="pc">
+	</div>
+	<div class="input1">
+		<input type="number" class="pc">
+	</div>
+	<div class="input1">
+		<p id="result"></p>
+	</div>
+</form>
+
+
+<script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
+<script>
+		$(document).ready(function(){
+          $('#btn1').click(function(){
+
+          /* alert($('input[name="rd1"]:checked').val())*/
+           let myradio = $('input[name="rd1"]:checked').val()
+            if(myradio===undefined){
+            	alert('checked one rdaio button')
+            }
+          })
+          $('.input1').on('input','.pc',function(){
+          	     	var totalsum = 0;
+               $('.input1 .pc').each(function(){
+               	var inputval = $(this).val();
+               	if($.isNumeric(inputval)){
+               		totalsum += parseInt(inputval);
+               	}
+               });
+             $('#result').text(totalsum);
+          })
+         });
+	</script>
+</body>
+</html>
